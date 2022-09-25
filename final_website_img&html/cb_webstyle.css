@@ -1,0 +1,11 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo nav nav"
+    "bike_gallery bike_gallery bike_gallery"
+    "footer footer footer"
+    ;
+    grid-gap: 0px;
+}

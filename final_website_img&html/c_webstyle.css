@@ -1,0 +1,21 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo nav nav"
+    "info circle_logo circle_logo"
+    "footer footer footer"
+    ;
+    grid-gap: 0px;
+}
+
+h1{
+    text-align: left;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+
+}

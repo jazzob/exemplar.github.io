@@ -1,0 +1,330 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Noto+Serif+Georgian:wght@800&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+body {
+    color: black;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+/* --- Start of Grid Setup --- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo nav nav"
+    "bikes bikes bikes"
+    "t-shirts-l t-shirts-t t-shirts-r"
+    "footer footer footer"
+    ;
+    grid-gap: 0;
+}
+
+/* --- End of Grid Setup --- */
+
+/* Area specifics */
+
+.nav{
+    color: black;
+    background-color: white;
+    font-size: 195%;  
+    text-align: center;
+    display: inline-block;
+    vertical-align: bottom;
+    border-bottom: 2px black solid;
+}
+
+.info {
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+}
+
+.circle_logo {
+    text-align: center;
+}
+
+.footer {
+    color: white; 
+    background-color: black;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+}
+
+.logo {
+    background-color: white;
+    color: black;
+    border-bottom: 2px black solid;
+}
+
+.bikes {
+
+    grid-area: bikes;
+
+    background-color: black;
+
+    color: white;
+
+    text-align: center;
+
+    position: relative;
+
+}
+
+.bike_gallery {
+    background-color: white;
+    text-align: center;
+}
+ 
+.t-shirts-l {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+}
+
+.t-shirts-t {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+}
+
+.t-shirts-r {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    
+}
+
+.white-tee-b, .white-tee-f, .blue-tee-f, .blue-tee-b, .black-tee-b, .black-tee-f{
+    background-color: white;
+}
+
+.t-info {
+    text-align: center;
+}
+
+/* Area Styling */
+
+.box {
+    border: 0 white solid;
+    padding: 2%;
+    
+}
+
+.t-info {
+    grid-area: t-info;
+}
+
+.logo {
+    grid-area: logo;
+
+}
+
+.nav {
+    grid-area: nav;
+    
+}
+
+.bike_gallery{
+    grid-area: bike_gallery;
+}
+
+.info {
+    grid-area: info;
+    
+}
+
+.circle_logo {
+    grid-area: circle_logo;
+}
+
+.bikes {
+    grid-area: bikes;
+    
+}
+
+.t-shirts {
+    grid-area: t-shirts;
+    
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    
+}
+
+.white-tee-f {
+    grid-area: white-tee-f;
+}
+
+.white-tee-b {
+    grid-area: white-tee-b;
+}
+
+.black-tee-f {
+    grid-area: black-tee-f;
+}
+
+.black-tee-b {
+    grid-area: black-tee-b;
+}
+
+.blue-tee-f {
+    grid-area: blue-tee-f;
+}
+
+.blue-tee-b {
+    grid-area: blue-tee-b;
+}
+/* image styling */
+
+.bike_gallery img{
+    margin: 1%;
+}
+
+img{
+    width: 100%;
+    text-align: center;
+}
+
+/* text styling */
+#bikelink a{
+
+    /*position: relative;*/
+
+    margin: 0 auto 0 auto;
+
+    padding: .5%;
+
+    border: 3px white solid;
+
+    text-decoration: none;
+
+    color: white;
+
+    /*New stuff*/
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 12px;
+
+    transform: translate(-50%, -50%);
+
+}
+
+#bikelink a:hover{
+    padding: .5%;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+#shirtlink a{
+    position: absolute;
+    top: 80%;
+    left: 46%;
+    padding: 1%;
+    border: 3px black solid;
+    color: white;
+}
+
+#shirtlink a:hover{
+    padding: 1%;
+    background-color: white;
+    color: black;
+    
+}
+
+.t-shirts-t a {
+    padding: 1%;
+    border: 3px black solid;
+
+}
+
+.t-shirts-t a:hover{
+    padding: 1%;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+.footer a{
+    margin-left: 15%;
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.nav a{
+    color: black;
+    margin: 7%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.bike_gallery a, .t-info a{
+    color: black;
+}
+
+.t-shirts-t a{
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.info h1{
+    font-family: 'Oswald', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav{
+        font-size: 80%;  
+    }
+
+    .footer {
+        font-size: 50%;
+    }
+
+    #bikelink a{
+        bottom: 6px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) and (min-width: 600px) {
+    .nav{
+        font-size: 110%;  
+    }
+
+    .footer {
+        font-size: 75%;
+    }
+    #bikelink a{
+        bottom: 0px;
+    }
+  }

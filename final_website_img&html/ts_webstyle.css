@@ -1,0 +1,15 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo logo nav nav nav nav"
+    "black-tee-f black-tee-f black-tee-f black-tee-b black-tee-b black-tee-b"
+    "white-tee-f white-tee-f white-tee-f white-tee-b white-tee-b white-tee-b"
+    "blue-tee-f blue-tee-f blue-tee-f blue-tee-b blue-tee-b blue-tee-b"
+    "t-info t-info t-info t-info t-info t-info"
+    "footer footer footer footer footer footer"
+    ;
+    grid-gap: 0px;
+}
+
